@@ -33,6 +33,9 @@ public class LinkedList {
         boolean flag = true;
         while (flag) {
             System.out.println("enter number of index to remove:");
+            for (int s:arrayList) {
+                System.out.print(s+"\t");
+            }
             arrayList.remove(scanner.nextInt());
             System.out.println("try again?");
             System.out.println("1.yes");
