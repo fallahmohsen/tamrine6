@@ -4,19 +4,24 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ArrayListMain {
+
     public static void main(String[] args) {
 
         ArrayList<Integer> arrayList = new ArrayList<>();
         ArrayList<Integer> arrayList1 = new ArrayList<>();
-
-        ClearArrayList(arrayList, arrayList1);
+        LinkedList linkedList = new LinkedList();
+        linkedList.isnull(arrayList);
+        linkedList.add(arrayList);
+        linkedList.remove(arrayList);
+        linkedList.search(arrayList);
+        clearArrayList(arrayList, arrayList1);
         for (int s : arrayList1
         ) {
             System.out.println(s);
         }
     }
 
-    public static void ClearArrayList(ArrayList arrayList, ArrayList arrayList1) {
+    public static void clearArrayList(ArrayList arrayList, ArrayList arrayList1) {
         if (arrayList.size() % 2 != 0) {
             int result = arrayList.size();
             result--;

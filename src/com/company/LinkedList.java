@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class LinkedList {
+    private static Scanner scanner = new Scanner(System.in);
     public void isnull(ArrayList<Integer> arrayList) {
         if (arrayList.size() == 0) {
             System.out.println("ArrayList is null");
@@ -11,7 +12,6 @@ public class LinkedList {
     }
 
     public void add(ArrayList<Integer> arrayList) {
-        Scanner scanner = new Scanner(System.in);
         boolean flag = true;
         while (flag) {
             System.out.println("enter number :");
@@ -30,7 +30,6 @@ public class LinkedList {
     }
 
     public void remove(ArrayList<Integer> arrayList) {
-        Scanner scanner = new Scanner(System.in);
         boolean flag = true;
         while (flag) {
             System.out.println("enter number of index to remove:");
@@ -42,6 +41,16 @@ public class LinkedList {
             if (selectedNumber == 2) {
                 flag = false;
             }
+        }
+    }
+    public void search(ArrayList<Integer>arrayList){
+        System.out.println("Enter a number to search");
+        int selectedNumber = scanner.nextInt();
+        for (int s:arrayList) {
+            if(s==selectedNumber){
+                System.out.println(s);
+            }
+
         }
     }
 }
